@@ -64,8 +64,8 @@ bool AppConfig::Save(const std::wstring& inPath) const {
     std::wofstream file(path);
     if (!file.is_open()) return false;
 
-    file << L"; Logitech Z906 Audio Keep-Alive Configuration\n";
-    file << L"; This application injects an inaudible high-frequency tone to prevent Logitech amps from sleeping.\n\n";
+    file << L"; Logitech Z906 Lights Flicker & Audio Sleep Fix\n";
+    file << L"; An automated background utility that prevents Logitech amps from sleeping on silent audio.\n\n";
 
     file << L"[Mode]\n";
     file << L"; 1 = Full Auto Mode (auto-detects audio, turns Green, 5m timeout)\n";

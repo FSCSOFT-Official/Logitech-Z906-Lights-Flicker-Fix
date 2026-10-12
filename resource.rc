@@ -18,12 +18,12 @@ BEGIN
     BEGIN
         BLOCK "040904b0"
         BEGIN
-            VALUE "CompanyName",      "Custom Logitech Fix\0"
-            VALUE "FileDescription",  "Logitech Z906 Audio Keep-Alive Tray App\0"
+            VALUE "CompanyName",      "REALDRAGNET\0"
+            VALUE "FileDescription",  "Logitech Z906 Lights Flicker & Audio Sleep Fix\0"
             VALUE "FileVersion",      "1.1.0.0\0"
             VALUE "InternalName",     "LogitechKeepAlive\0"
             VALUE "OriginalFilename", "LogitechKeepAlive.exe\0"
-            VALUE "ProductName",      "Logitech Z906 Keep-Alive\0"
+            VALUE "ProductName",      "Logitech Z906 Lights Flicker & Audio Sleep Fix\0"
             VALUE "ProductVersion",   "1.1.0.0\0"
         END
     END

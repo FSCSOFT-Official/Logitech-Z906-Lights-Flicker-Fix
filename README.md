@@ -1,6 +1,8 @@
-# Logitech Z906 Audio Keep-Alive
+# Logitech Z906 Lights Flicker & Audio Sleep Fix
 
-A tiny (~56 KB), zero-dependency Windows tray application that stops Logitech amplifiers and speaker systems (like the **Logitech Z906**) from constantly going to sleep, dropping digital handshakes, and flashing their console LEDs during quiet audio or streams with aggressive noise gates (e.g., Twitch, podcasts, YouTube).
+> An automated, zero-overhead Windows tray utility that stops the Logitech Z906 console lights from flashing and sleeping during quiet audio or Twitch streams.
+
+A tiny (~56 KB), zero-dependency Windows tray application that stops Logitech amplifiers and speaker systems (especially the **Logitech Z906**) from constantly going to sleep, dropping digital handshakes, and flashing their console LEDs during quiet audio or streams with aggressive noise gates (e.g., Twitch, podcasts, YouTube, Discord).
 
 ---
 
@@ -15,7 +17,7 @@ When watching livestreams (like Twitch) or podcasts where creators employ speech
 Logitech's built-in "disable auto-standby" shortcut (holding the Input/Level button for 8 seconds) only disables the 2-hour general power-off—**it does not fix the optical silence drop**.
 
 <p align="center">
-  <img src="img/z906_console_ref.png" alt="Logitech Z906 Console Speaker LEDs" width="220" />
+  <img src="img/z906_console_ref.png" alt="Logitech Z906 Console Speaker LEDs" width="139" height="95" />
 </p>
 
 ---
@@ -30,17 +32,13 @@ This app sits unobtrusively in your Windows taskbar system tray. It plays a cont
 
 ## System Tray States
 
-The tray icon is custom-drawn to replicate the 6-speaker layout of the Logitech Z906 console display (Front-Left, Center, Front-Right, Subwoofer on the top row; Rear-Left, Rear-Right on the bottom row):
+The tray icon faithfully replicates the 6-speaker layout of the Logitech Z906 console display (Front-Left, Center, Front-Right, Subwoofer on the top row; Rear-Left, Rear-Right on the bottom row):
 
-<p align="center">
-  <img src="img/tray_states_preview.png" alt="Logitech Keep-Alive Tray States" width="460" />
-</p>
-
-| State | Color | Description |
-| :--- | :--- | :--- |
-| **Idle / Standby** | **Amber / Orange** | No keep-alive playing. In Auto mode, it is passively monitoring system audio. |
-| **Full Auto Active** | **Green** | System audio detected! Keep-alive tone is active with a self-resetting 5-minute timeout. |
-| **Manual Active** | **Red** | Manually activated keep-alive running on a 2-hour countdown. |
+| State | Icon (32×32) | LED Color | Description |
+| :--- | :---: | :--- | :--- |
+| **Idle / Standby** | <img src="img/icon_idle_32.png" width="32" height="32" alt="Idle Amber" /> | **Amber / Orange** | No keep-alive playing. In Auto mode, passively monitors system audio. |
+| **Full Auto Active** | <img src="img/icon_auto_32.png" width="32" height="32" alt="Auto Green" /> | **Green** | System audio detected! Keep-alive tone active with self-resetting 5-minute timeout. |
+| **Manual Active** | <img src="img/icon_manual_32.png" width="32" height="32" alt="Manual Red" /> | **Red** | Manually activated keep-alive running on a 2-hour countdown. |
 
 ---
 
