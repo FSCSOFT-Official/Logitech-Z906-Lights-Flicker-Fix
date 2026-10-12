@@ -110,5 +110,11 @@ DurationMinutes=120
 
 ---
 
+## Support
+If this tool saved your sanity from the Z906 light show and you'd like to support the project:
+- [![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?logo=paypal)](https://paypal.me/FSCSOFT)
+
+---
+
 ## License
 MIT License. Free to use, modify, and distribute.
