@@ -1,0 +1,17 @@
+# Build artifacts
+*.obj
+*.res
+*.pdb
+*.ilk
+*.exp
+*.lib
+
+# Visual Studio / IDE temporary files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Windows thumbnail cache
+Thumbs.db
