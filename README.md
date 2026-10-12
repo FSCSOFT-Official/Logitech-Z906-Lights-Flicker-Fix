@@ -1,15 +1,15 @@
 # Logitech Z906 Lights Flicker & Audio Sleep Fix
 
-> An automated, zero-overhead Windows tray utility that stops the Logitech Z906 console lights from flashing and sleeping during quiet audio or Twitch streams.
+> An automated, zero-overhead Windows tray utility that stops the Logitech Z906 console lights from flashing and sleeping during quiet audio, speech pauses, or digital silence.
 
-A tiny (~56 KB), zero-dependency Windows tray application that stops Logitech amplifiers and speaker systems (especially the **Logitech Z906**) from constantly going to sleep, dropping digital handshakes, and flashing their console LEDs during quiet audio or streams with aggressive noise gates (e.g., Twitch, podcasts, YouTube, Discord).
+A tiny (~56 KB), zero-dependency Windows tray application that stops Logitech amplifiers and speaker systems (especially the **Logitech Z906**) from constantly going to sleep, dropping digital handshakes, and flashing their console LEDs during quiet scenes, podcasts, streams, videos, or games.
 
 ---
 
 ## The Problem
 Logitech digital surround systems (such as the Z906) feature an aggressive silence detection circuit on digital S/PDIF and optical connections. 
 
-When watching livestreams (like Twitch) or podcasts where creators employ speech noise gates, pauses in speech drop the audio output to pure digital silence (zeroes). The Logitech amplifier's DSP interprets this as a dropped signal and enters a standby/muted state. As soon as speech resumes, the amplifier has to re-synchronize:
+When listening to content with speech pauses, quiet dialogue, or background noise suppression (podcasts, streams, videos, movies, voice chats, or games), audio frequently drops to pure digital silence (zeroes). The Logitech amplifier's DSP interprets this as a dropped signal and enters a standby/muted state. As soon as audio resumes, the amplifier has to re-synchronize:
 - The console’s speaker indicator and input LEDs repeatedly **flash and cycle** like a light show.
 - The first 1–2 seconds of audio can be clipped or delayed.
 - An audible click/pop often occurs.
